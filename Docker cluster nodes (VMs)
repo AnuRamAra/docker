@@ -1,0 +1,15 @@
+Docker cluster nodes (VMs)
+--------------------------
+VirtualBox (Intel)
+-------------------
+$ cd /opt/kickstart-linux
+$ VAGRANT_CWD=./vagrant/alma-linux-9/virtualbox/amd64/server vagrant up sloopstash-dkr-mgr-1
+$ VAGRANT_CWD=./vagrant/alma-linux-9/virtualbox/amd64/server vagrant up sloopstash-dkr-wkr-1
+$ VAGRANT_CWD=./vagrant/alma-linux-9/virtualbox/amd64/server vagrant up sloopstash-dkr-wkr-2
+
+VMware (Apple Silicon)
+-----------------------
+$ cd /opt/kickstart-linux
+$ VAGRANT_CWD=./vagrant/alma-linux-9/vmware/arm64/server vagrant up sloopstash-dkr-mgr-1
+$ VAGRANT_CWD=./vagrant/alma-linux-9/vmware/arm64/server vagrant up sloopstash-dkr-wkr-1
+$ VAGRANT_CWD=./vagrant/alma-linux-9/vmware/arm64/server vagrant up sloopstash-dkr-wkr-2
